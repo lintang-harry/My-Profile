@@ -1,0 +1,120 @@
+/* bagian umum */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0%;
+}
+
+h2,
+h3 {
+  color: #10a19d;
+}
+
+p {
+  text-indent: 2em;
+  font-family: sans-serif;
+  text-align: justify;
+}
+
+#letter-spacing {
+  letter-spacing: 4px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 #ffd495;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* bagian header */
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #ffb100;
+  background-image: repeating-linear-gradient(#4b56d2, #f1f6f5);
+  text-align: center;
+  color: black;
+}
+
+/* bagian navbar */
+nav {
+  background-color: #ffd495;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #0002a1;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
+  color: #22a39f;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+/* pengaturan gambar */
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+  transition: transfrom 0.2s;
+  border-radius: 5px;
+}
+
+.featured-image:hover {
+  transform: scale(1.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* pengaturan asside */
+aside {
+  float: right;
+  width: 30%;
+  padding: 10px;
+}
+
+/* pengaturan main */
+main {
+  padding: 20px;
+  overflow: auto;
+}
+.content {
+  float: left;
+  width: 70%;
+}
+
+/* pengaturan responsive */
+@media screen and (max-width: 100px) {
+  .content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* pengaturan footer */
+footer {
+  padding: 15px;
+  color: white;
+  background-color: chartreuse;
+  text-align: center;
+  font-weight: bold;
+}
